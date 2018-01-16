@@ -1,2 +1,5 @@
 _site/
 .DS_STORE
+.gitignore
+Gemfile
+Gemfile.lock

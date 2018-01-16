@@ -1,17 +1,25 @@
 # Site settings
-title: "smllrd"
-description: A test for Sam Ellard's blog.
+title: "et cetera."
+description: Thoughts on day-to-day life in Japan.
 
 author: Sam Ellard
 email: ellardsaa@gmail.com
-twitter_username: smllrd
+twitter_username: etcblogjp
 github_username: redllamas
+
+twitter:
+  username: etcblogjp
+  creator: smllrd
 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://etcblog.jp" # the base hostname & protocol for your site
 
 google_analytics_id: UA-60126812-4
-disqus_id:
+disqus_id: etcblog-jp
+
+# Jekyll plugins
+plugins:
+  - jekyll-seo-tag
 
 # Build settings
 include: [_pages]

@@ -256,6 +256,7 @@ DEPENDENCIES
   html-proofer
   jekyll
   jekyll-livereload
+  jekyll-seo-tag
   rb-fsevent (= 0.9.8)
 
 BUNDLED WITH
