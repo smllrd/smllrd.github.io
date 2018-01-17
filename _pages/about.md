@@ -3,20 +3,17 @@ layout: content
 title: About
 permalink: /about/
 ---
-Hi, I'm Johnny and I live in the Shire. Thanks for visiting my site.
+This is et cetera., the personal blog of Sam Ellard.
 
-I program and write about software development when I have the time. More information can be found through <a href="https://www.linkedin.com/" data-network="LinkedIn" data-proofer-ignore>LinkedIn.</a>
+Why et cetera?
+I have always had divergent interests, while never getting too deep into any one topic in particular. I could put this down to a lack of attention, but rather than bemoan my scattered interests, I thought I would embrace them in their variety.
 
-----
-
-## The Website
-This site was made on an [Apple MBP](https://www.apple.com/) powered by [Jekyll](https://jekyllrb.com) on [Github Pages](https://pages.github.com).
-I'd love to hear your feedback on this site and my work.
+This blog will mainly serve as practice for me in building a site based on Jekyll, my progress in learning Ruby and programming, documenting my attempt at being a parent, life in Japan, etc. The etc. is the point.
 
 ----
 
-## Etcetera
+## Et cetera.
 
-- [Instagram](https://www.instagram.com/) for 📸
-- [Facebook](https://www.facebook.com/) for 🕺
+- [Instagram](https://www.instagram.com/etcblogjp)
+- [Twitter](https://www.twitter.com/etcblogjp)
 
