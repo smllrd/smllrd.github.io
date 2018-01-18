@@ -1,10 +1,12 @@
 ---
-layout: post
-title: "A Full and Comprehensive Style Test"
-description: "Test post for style"
-date: 2016-08-15
-tags: test, style
-comments: true
+title: "Another test entry"
+header:
+  image: 
+categories:
+  - test
+tags:
+  - style
+  - layout
 ---
 
 Below is just about everything you'll need to style in the theme. Check the source code to see the many embedded elements within paragraphs.

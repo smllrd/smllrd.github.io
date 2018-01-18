@@ -12,6 +12,6 @@ I'll also talk about architecture, coffee and other stuff that pops up in day-to
 
 ## Licence
 
-Shout out to Mike JS Choi for Paper Jekyll Theme, see licence for details.
+Shout out to Michael Rose for the Minimal Mistakes theme.
 
 

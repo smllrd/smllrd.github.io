@@ -1,12 +1,15 @@
 ---
-layout: post
 title: "Syntax Highlighting Post"
-description: "Demo post displaying the various ways of highlighting code in Markdown."
-date: 2017-07-20
-tags: sample post, code, highlighting
-comments: true
+header:
+  image: https://farm5.staticflickr.com/4140/4939863887_84705982fd_b.jpg
+categories:
+  - Test
+tags:
+  - test post
+  - featured image
+  - image
+  - layout
 ---
-
 
 Syntax highlighting is a feature that displays source code, in different colors and fonts according to the category of terms. This feature facilitates writing in a structured language such as a programming language or a markup language as both structures and syntax errors are visually distinct. Highlighting does not affect the meaning of the text itself; it is intended only for human readers.[^1]
 
