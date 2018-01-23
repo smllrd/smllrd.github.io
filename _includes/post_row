@@ -1,0 +1,69 @@
+{% if include.id %}
+  {% assign post_row = page[include.id] %}
+{% else %}
+  {% assign post_row = page.post_row %}
+{% endif %}
+
+<div class="feature__wrapper">
+
+  {% for f in site.posts limit: 3 %}
+
+    {% if f.url contains "://" %}
+      {% capture f_url %}{{ f.url }}{% endcapture %}
+    {% else %}
+      {% capture f_url %}{{ f.url | absolute_url }}{% endcapture %}
+    {% endif %}
+
+    <div class="feature__item{% if include.type %}--{{ include.type }}{% endif %}">
+      <div class="archive__item">
+        {% if f.image_path %}
+          <div class="archive__item-teaser">
+            <img src=
+              {% if f.image_path contains "://" %}
+                "{{ f.image_path }}"
+              {% else %}
+                "{{ f.image_path | absolute_url }}"
+              {% endif %}
+            alt="{% if f.alt %}{{ f.alt }}{% endif %}">
+          </div>
+          {% elsif f.header.teaser %}
+          <div class="archive__item-teaser">
+            <img src=
+              {% if f.header.teaser contains "://" %}
+                "{{ f.header.teaser }}"
+              {% else %}
+                "{{ f.header.teaser | absolute_url }}"
+              {% endif %}
+            alt="{% if f.alt %}{{ f.alt }}{% endif %}">
+          </div>
+        {% endif %}
+
+        <div class="archive__item-body">
+          {% if f.title %}
+            <h2 class="archive__item-title">
+
+            {% if f.link %}
+        <a href="{{ f.link }}">{{ f.title }}</a> <a href="{{ f.url | absolute_url }}" rel="permalink"><i class="fas fa-link" aria-hidden="true" title="permalink"></i><span class="sr-only">Permalink</span></a>
+      {% else %}
+        <a href="{{ f.url | absolute_url }}" rel="permalink">{{ f.title }}</a>
+        </h2>
+      {% endif %}
+
+
+          {% endif %}
+
+          {% if f.excerpt %}
+            <div class="archive__item-excerpt">
+              {{ f.excerpt | markdownify }}
+            </div>
+          {% endif %}
+
+          {% if f.url %}
+            <p><a href="{{ f_url }}" class="btn {{ f.btn_class }}">{{ f.btn_label | default: site.data.ui-text[site.locale].more_label | default: "Read More" }}</a></p>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  {% endfor %}
+
+</div>
